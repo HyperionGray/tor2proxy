@@ -6,7 +6,7 @@ you use this for strong anonymity, as your browser is not hardened like Tor Brow
 this guide is, however, a good start: https://vikingvpn.com/cybersecurity-wiki/browser-security/guide-hardening-mozilla-firefox-for-privacy-and-security
 
 In order to use this purchase an HTTP proxy and fill in the details in the squid.conf to include
-your proxy information:
+your parent proxy information (the proxy you will be forwarding traffic to)
 
 ```
 #####Enter your proxy information here
@@ -14,18 +14,14 @@ cache_peer <ip or domain name> parent <port> 0 no-query default login=<password>
 #################
 ```
 
-Install docker and then just run build.sh followed by start.sh. You should then have
-a working tor2proxy.
+Install docker and then just run `bash build.sh`. Your tor2proxy docker image should now be built.
+Find the image hash and run `start.sh image_hash`. You should then have
+a working tor2proxy. By default tor2proxy protects the local http proxy daemon with the
+credentials hyperion and IUW8292. An example request is below:
 
 ```
-$ curl -u username:password -x http://localhost:8091 https://wtfismyip.com/text
+$ curl -u hyperion:IUW8292 -x http://localhost:8091 https://wtfismyip.com/text
 ```
-
-# Building
-
-To build this just run build.sh when on the rebuild branch . Then to start the
-container run start.sh with the image name as the first arg. Make sure to set
-the proxy information to whatever you need it to be.
 
 # Bugs?
 
