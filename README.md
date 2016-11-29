@@ -14,6 +14,9 @@ cache_peer <ip or domain name> parent <port> 0 no-query default login=<password>
 #################
 ```
 
+Install docker and then just run build.sh followed by start.sh. You should then have
+a working tor2proxy.
+
 ```
 $ curl -u username:password -x http://localhost:8091 https://wtfismyip.com/text
 ```
@@ -23,3 +26,7 @@ $ curl -u username:password -x http://localhost:8091 https://wtfismyip.com/text
 To build this just run build.sh when on the rebuild branch . Then to start the
 container run start.sh with the image name as the first arg. Make sure to set
 the proxy information to whatever you need it to be.
+
+# Bugs?
+
+File an issue or hit me up on twitter @DotSlashPunk.
