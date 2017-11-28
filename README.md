@@ -25,4 +25,4 @@ $ curl -u hyperion:IUW8292 -x http://localhost:8091 https://wtfismyip.com/text
 
 # Bugs?
 
-File an issue or hit me up on twitter @DotSlashPunk.
+File an issue or hit me up on twitter @_hyp3ri0n
