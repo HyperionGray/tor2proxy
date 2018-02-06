@@ -26,3 +26,7 @@ $ curl -u hyperion:IUW8292 -x http://localhost:8091 https://wtfismyip.com/text
 # Bugs?
 
 File an issue or hit me up on twitter @_hyp3ri0n
+
+---
+
+[![define hyperion gray](https://hyperiongray.s3.amazonaws.com/define-hg.svg)](https://hyperiongray.com/?pk_campaign=github&pk_kwd=tor2proxy "Hyperion Gray")
