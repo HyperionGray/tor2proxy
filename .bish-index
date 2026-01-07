@@ -1,0 +1,6 @@
+./tor2proxy/container-init.sh
+./tor2proxy/tor_status.py
+./tor2proxy/iptables.sh
+./start.sh
+./README.md
+./build.sh

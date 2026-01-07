@@ -1,0 +1,3 @@
+./container-init.sh
+./tor_status.py
+./iptables.sh
